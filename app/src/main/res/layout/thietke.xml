@@ -1,0 +1,35 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- LinearLayout chứa Button và TextView, được căn giữa màn hình -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <!-- Button nằm phía trên -->
+        <Button
+            android:id="@+id/myButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click Me" />
+
+        <!-- TextView nằm dưới Button, hiển thị dòng chữ "This is Child" -->
+        <TextView
+            android:id="@+id/myTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is Child"
+            android:layout_marginTop="16dp"  <!-- Khoảng cách trên với Button -->
+        android:padding="8dp"           <!-- Khoảng cách nội dung bên trong -->
+        android:background="#FFFF00"    <!-- Nền vàng -->
+          android:textColor="#000000"     <!-- Phông chữ màu đen -->
+            android:textSize="18sp"         <!-- Kích thước chữ -->
+          android:gravity="center" />     <!-- Căn giữa nội dung chữ -->
+
+    </LinearLayout>
+
+</RelativeLayout>
